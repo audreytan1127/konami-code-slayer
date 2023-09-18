@@ -39,7 +39,7 @@
         if (userStoredKeyCode.toString().indexOf(konamiKeyCode) >= 0) {
             console.log('You have added 30 lives!');
             $('h1').text("Get ready for the boss fight!!");
-            $('#the-boss').prepend('<img src="img/purple-dragon-unscreen.gif"/>');
+            $('#the-boss').prepend('<img src="/img/purple-dragon-unscreen.gif"/>');
             $('#stop-music').show();
             $('stop-music').css({'display': 'flex', 'justify-content': 'center'});
             musicPlay.play();
@@ -52,7 +52,7 @@
     $('#stop-music').on('click', () => {
         musicPlay.pause();
         $('#the-boss').hide();
-        $('#cuddle-dragon').prepend('<img src="img/small-purple-dragon-unscreen.gif"/>');
+        $('#cuddle-dragon').prepend('<img src="/img/small-purple-dragon-unscreen.gif"/>');
     });
 
 </script>
